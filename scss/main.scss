@@ -15,13 +15,7 @@
     height: 28em;
 
     .content {
-        margin: 8em 0 10em 5em;
-        display: inline-block;
-
-        .description {
-            width: 30%;
-            margin-top: 2em;
-        }
+        padding: 6em 0 0 5em;
     }
 }
 
@@ -39,38 +33,51 @@
 
 
 .header-section {
+    display: block;
 
     .header-content {
+        display: block;
         position: relative;
+        height: 100%;
+        height: 100%;
 
         .my-info {
             display: inline-block;
+            margin: 8em 0 10em 5em;
+            width: calc(100% - 5em);
 
             .my-name {
 
                 h1 {
                     position: relative;
                     margin: 0;
-                    font-size: 2em;
-                    font-weight: 400;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 1.9em;
+                    font-weight: 100;
 
                     &::after {
                         content: '';
                         position: absolute;
-                        top: 1.5em;
+                        top: 1.85em;
                         left: 0;
+                        right: 0;
                         width: 100%;
                         border: 2px solid black;
+                        box-sizing: border-box;
                     }
                 }
             }
 
             .my-description {
-                width: 30%;
-                margin-top: 2em;
+                width: 24em;
+                margin-top: 3em;
 
                 p {
                     margin: 0;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 1.15em;
+                    font-weight: 100;
+                    letter-spacing: 0.5px;
                 }
             }
         }
@@ -88,6 +95,9 @@
                 a {
                     text-decoration: none;
                     color: black;
+                    font-family: 'Lato', sans-serif;
+                    letter-spacing: 0.5px;
+                    font-weight: 400;
                 }
             }
 
@@ -105,14 +115,16 @@
         .header-preview {
             display: inline-block;
             position: absolute;
-            bottom: 5em;
-            right: 3em;
+            bottom: 3em;
+            right: 4em;
 
             a {
                 text-decoration: none;
                 color: black;
                 text-transform: uppercase;
-                font-size: 1em;
+                font-size: 0.9em;
+                font-family: 'Lato', sans-serif;
+                font-weight: 600;
             }
         }
     }
@@ -124,6 +136,7 @@
 ************************************************************/
 
 .content-section {
+    display: block;
     background-color: #61da94;
 
     .content-section-content {
@@ -139,23 +152,31 @@
                     color: white;
                     font-size: 2em;
                     font-weight: 400;
+                    font-family: 'Lato', sans-serif;
 
                     &::after {
                         content: '';
                         position: absolute;
-                        top: 1.5em;
+                        top: 1.85em;
                         left: 0;
                         width: 100%;
                         border: 2px solid white;
+                        box-sizing: border-box;
                     }
                 }
             }
 
             .project-description {
+                width: 30%;
+                margin-top: 3em;
 
                 p {
                     margin: 0;
                     color: white;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 1em;
+                    font-weight: 100;
+                    letter-spacing: 0.5px;
                 }
             }
         }
@@ -172,12 +193,13 @@
                 color: white;
                 margin-top: 2em;
                 padding: 0.5em 1.2em;
+                font-family: 'Lato', sans-serif;
             }
         }
 
         .laptop {
             position: absolute;
-            top: -3em;
+            top: 5em;
             right: 0;
 
             img {
