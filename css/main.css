@@ -1,2 +1,2 @@
-.global{width:100%;height:100%}
+.global{width:100%;height:100%}.container{width:100%;height:100%}.container .content{margin:10em 0 0 5em}.container .content .line h1::after{content:'';position:absolute;top:1.5em;left:0;width:100%;border:2px solid black}.header-section .header-content .my-info .my-name h1{position:relative;margin:0}.header-section .header-content .my-info .my-description{width:30%;margin-top:2em;float:left}.header-section .header-content .my-info .my-description p{margin:0}.header-section .header-content .contact-info .header-email{float:right}
 /*# sourceMappingURL=main.css.map */
