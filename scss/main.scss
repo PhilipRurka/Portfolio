@@ -114,7 +114,7 @@
                 }
 
                 button {
-                    @include background-content('github.svg', contain);
+                    @include background-content('header-github.svg', contain);
                     @include bg-dimention-position(2em, 2em, relative, 12px, 0);
                     @extend %buttonless;
                 }
@@ -495,7 +495,7 @@
                     text-align: center;
 
                     button {
-                        @include background-content('github.svg', contain);
+                        @include background-content('footer-github.svg', contain);
                         @include bg-dimention-position(2em, 2em, relative);
                         @extend %buttonless;
                         display: inline-block;
