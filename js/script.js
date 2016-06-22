@@ -18,7 +18,12 @@
 
 
 
-
+$('.header-preview a').click(function (event) {
+	event.preventDefault();
+	$('body').animate({
+	    scrollTop: $('#scroll-destination').offset().top
+	});
+});
 
 
 /*****************
@@ -27,7 +32,7 @@
 
 
 /***** Outline Hack part 1/2 *****/
-$('button').each(function() {
+$('button, a').each(function() {
 	$(this).click(function(event) {
 		$('#outline a').focus();
 	});
