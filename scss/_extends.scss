@@ -48,7 +48,49 @@
 ************************************************************/
 
 
+$white										: #ffffff;
+$black										: #000000;
+$pastel-green								: #61da94;
+
 
 /***********************************
-           Colors-Function
+           Colors Function
 ************************************/
+
+$color-my-info								: $black;
+$color-header-line							: $black;
+$color-header-email							: $pastel-green;
+$color-header-preview						: $black;
+
+$color-content-section						: $pastel-green;
+$color-project-info							: $white;
+$color-project-line							: $white;
+$color-project-preview						: $white;
+
+$color-footer-greeting						: $black;
+$color-footer-email							: $pastel-green;
+
+/***********************************************************
+                      	Font Family
+************************************************************/
+
+
+$lato									: 'Lato', sans-serif;
+
+
+/***********************************
+       Font Family Function
+************************************/
+
+
+$font-my-name							: $lato;
+$font-my-description					: $lato;
+$font-header-email						: $lato;
+$font-header-preview					: $lato;
+
+$font-project-name						: $lato;
+$font-project-description				: $lato;
+$font-project-preview					: $lato;
+
+$font-footer-greeting					: $lato;
+$font-footer-email						: $lato;

@@ -11,27 +11,6 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 100%;
-    height: 28em;
-
-    @media screen and (max-width: 740px) {
-        height: 100%;
-    }
-
-    .content {
-        padding: 8em 0 0 5em;
-        box-sizing: border-box;
-        width: 100%;
-        max-width: 1300px;
-        margin: 0 auto;
-
-        @media screen and (max-width: 740px) {
-            padding: 0;
-        }
-    }
-}
-
 //////////// Clear Fix //////////////
 .clearfix::after {
     content: '';
@@ -72,11 +51,10 @@
             .my-name {
 
                 h1 {
+                    @include text(1.9em, $color-my-info, 600);
+                    font-family: $font-my-name;
                     position: relative;
                     margin: 0;
-                    font-family: 'Lato', sans-serif;
-                    font-size: 1.9em;
-                    font-weight: 600;
 
                     &::after {
                         content: '';
@@ -85,7 +63,7 @@
                         left: 0;
                         right: 0;
                         width: 100%;
-                        border: 2px solid black;
+                        border: 2px solid $color-header-line;
                         box-sizing: border-box;
                     }
                 }
@@ -101,11 +79,9 @@
                 }
 
                 p {
+                    @include text(1.15em, $color-my-info, 100, 0.5px);
+                    font-family: $font-my-description;
                     margin: 0;
-                    font-family: 'Lato', sans-serif;
-                    font-size: 1.15em;
-                    font-weight: 100;
-                    letter-spacing: 0.5px;
 
                     @media screen and (max-width: 740px) {
                         line-height: 1.75em;
@@ -159,11 +135,9 @@
                 }
 
                 a {
+                    @include text(1em, $color-header-email, 400, 0.5px);
+                    font-family: $font-header-email;
                     text-decoration: none;
-                    color: black;
-                    font-family: 'Lato', sans-serif;
-                    letter-spacing: 0.5px;
-                    font-weight: 400;
                 }
             }
         }
@@ -179,12 +153,10 @@
             }
 
             a {
+                @include text(0.9em, $color-header-preview, 600);
+                font-family: $font-header-preview;
                 text-decoration: none;
-                color: black;
                 text-transform: uppercase;
-                font-size: 0.9em;
-                font-family: 'Lato', sans-serif;
-                font-weight: 600;
             }
         }
     }
@@ -195,31 +167,50 @@
                      Content Section
 ************************************************************/
 
+/***********************************
+          Content Right
+***********************************/
 
-.content-section {
+.content-section-right {
+    width: 100%;
+    height: 28em;
     display: block;
-    background-color: #61da94;
+    background-color: $color-content-section;
+
+    @media screen and (max-width: 740px) {
+        height: 100%;
+    }
 
     .content-section-content {
         position: relative;
+        padding: 8em 0 0 5em;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+
+        @media screen and (max-width: 740px) {
+            padding: 0;
+        }
 
         .project-info {
 
             @media screen and (max-width: 740px) {
-                width: 80vw;
-                margin: 0 auto;
                 padding-top: 4em;
             }
 
             .project-name {
 
+            @media screen and (max-width: 740px) {
+                    width: 90vw;
+                    margin-left: auto;
+                }
+
                 h1 {
+                    @include text(2em, $color-project-info, 400);
+                    font-family: $font-project-name;
                     position: relative;
                     margin: 0;
-                    color: white;
-                    font-size: 2em;
-                    font-weight: 400;
-                    font-family: 'Lato', sans-serif;
 
                     &::after {
                         content: '';
@@ -227,7 +218,7 @@
                         top: 1.85em;
                         left: 0;
                         width: 100%;
-                        border: 2px solid white;
+                        border: 2px solid $color-project-line;
                         box-sizing: border-box;
                     }
                 }
@@ -238,17 +229,15 @@
                 margin-top: 3em;
 
                 @media screen and (max-width: 740px) {
-                    width: 100%;
                     line-height: 1.75em;
+                    width: 80vw;
+                    margin: 3em auto 0;
                 }
 
                 p {
+                    @include text(1em, $color-project-info, 100, 0.5px);
+                    font-family: $font-project-description;
                     margin: 0;
-                    color: white;
-                    font-family: 'Lato', sans-serif;
-                    font-size: 1em;
-                    font-weight: 100;
-                    letter-spacing: 0.5px;
                 }
             }
         }
@@ -266,14 +255,13 @@
             }
 
             button {
+                @include text(0.75em, $color-project-preview);
+                font-family: $font-project-preview;
                 background-color: rgba(0, 0, 0, 0.3);
                 text-transform: uppercase;
                 border: none;
                 box-shadow: none;
-                font-size: 0.75em;
-                color: white;
                 padding: 0.5em 1.2em;
-                font-family: 'Lato', sans-serif;
 
                 @media screen and (max-width: 740px) {
                     padding: 0.75em 2.5em;
@@ -309,6 +297,141 @@
     }
 }
 
+/***********************************
+            Content Left
+***********************************/
+
+
+
+.content-section-left {
+    width: 100%;
+    height: 28em;
+    display: block;
+    background-color: gold;
+
+    @media screen and (max-width: 740px) {
+        height: 100%;
+    }
+
+    .content-section-content {
+        position: relative;
+        padding: 8em 5em 0 0;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        text-align: right;
+
+        @media screen and (max-width: 740px) {
+            padding: 0;
+        }
+
+        .project-info {
+
+            @media screen and (max-width: 740px) {
+                padding-top: 4em;
+            }
+
+            .project-name {
+
+            @media screen and (max-width: 740px) {
+                    width: 90vw;
+                    margin-right: auto;
+                }
+
+                h1 {
+                    @include text(2em, $color-project-info, 400);
+                    font-family: $font-project-name;
+                    position: relative;
+                    margin: 0;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 1.85em;
+                        left: 0;
+                        width: 100%;
+                        border: 2px solid $color-project-line;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+
+            .project-description {
+                width: 30%;
+                margin-top: 3em;
+                margin-left: auto;
+
+                @media screen and (max-width: 740px) {
+                    line-height: 1.75em;
+                    width: 80vw;
+                    margin: 3em auto 0;
+                }
+
+                p {
+                    @include text(1em, $color-project-info, 100, 0.5px);
+                    font-family: $font-project-description;
+                    margin: 0;
+                }
+            }
+        }
+
+        .project-preview {
+            display: inline-block;
+            margin-top: 2em;
+
+
+            @media screen and (max-width: 740px) {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding-bottom: 3em;
+            }
+
+            button {
+                @include text(0.75em, $color-project-preview);
+                font-family: $font-project-preview;
+                background-color: rgba(0, 0, 0, 0.3);
+                text-transform: uppercase;
+                border: none;
+                box-shadow: none;
+                padding: 0.5em 1.2em;
+
+                @media screen and (max-width: 740px) {
+                    padding: 0.75em 2.5em;
+                }
+            }
+        }
+
+        .laptop {
+            position: absolute;
+            top: 5em;
+            left: 0;
+
+            @media screen and (max-width: 740px) {
+                position: initial;
+                width: 100%;
+                top: initial;
+                right: initial;
+                text-align: center;
+                margin-top: 2em;
+            }
+
+            img {
+                width: 27em;
+                height: 19em;
+
+                @media screen and (max-width: 740px) {
+                    position: initial;
+                    width: 80vw;
+                    height: 55vw;
+                }
+            }
+        }
+    }
+}
+
+
 
 /***********************************************************
                       Footer Section
@@ -339,24 +462,21 @@
                 &.greeting {
 
                     h3 {
+                        @include text(1.25em, $color-footer-greeting, 100, 1px);
+                        font-family: $font-footer-greeting;
                         display: inline-block;
                         margin: 0;
-                        font-size: 1.25em;
-                        font-weight: 100;
-                        letter-spacing: 1px;
                     }
                 }
 
                 &.footer-email {
 
                     a {
+                        @include text(1em, $color-footer-email, 100, 0.5px);
+                        font-family: $font-footer-email;
                         text-decoration: none;
                         display: inline-block;
                         margin: 0;
-                        color: #61da94;
-                        font-size: 1em;
-                        letter-spacing: 0.5px;
-                        font-weight: 100;
                     }
                 }
 
