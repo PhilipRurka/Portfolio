@@ -184,7 +184,7 @@
           Content Right
 ***********************************/
 
-.content-section-right {
+.content-section {
     width: 100%;
     height: 28em;
     display: block;
@@ -314,133 +314,6 @@
 ***********************************/
 
 
-
-.content-section-left {
-    width: 100%;
-    height: 28em;
-    display: block;
-
-    @media screen and (max-width: 740px) {
-        height: 100%;
-    }
-
-    .content-section-content {
-        position: relative;
-        padding: 8em 5em 0 0;
-        box-sizing: border-box;
-        width: 100%;
-        max-width: 1300px;
-        margin: 0 auto;
-        text-align: right;
-
-        @media screen and (max-width: 740px) {
-            padding: 0;
-        }
-
-        .project-info {
-
-            @media screen and (max-width: 740px) {
-                padding-top: 4em;
-            }
-
-            .project-name {
-
-            @media screen and (max-width: 740px) {
-                    width: 90vw;
-                    margin-right: auto;
-                }
-
-                h1 {
-                    @include text(2em, $color-project-info, 400);
-                    font-family: $font-project-name;
-                    position: relative;
-                    margin: 0;
-
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        top: 1.85em;
-                        left: 0;
-                        width: 100%;
-                        border: 2px solid $color-project-line;
-                        box-sizing: border-box;
-                    }
-                }
-            }
-
-            .project-description {
-                width: 30%;
-                margin-top: 3em;
-                margin-left: auto;
-
-                @media screen and (max-width: 740px) {
-                    line-height: 1.75em;
-                    width: 80vw;
-                    margin: 3em auto 0;
-                }
-
-                p {
-                    @include text(1em, $color-project-info, 100, 0.5px);
-                    font-family: $font-project-description;
-                    margin: 0;
-                }
-            }
-        }
-
-        .project-preview {
-            display: inline-block;
-            margin-top: 2em;
-
-
-            @media screen and (max-width: 740px) {
-                display: block;
-                width: 100%;
-                text-align: center;
-                padding-bottom: 3em;
-            }
-
-            button {
-                @include text(0.75em, $color-project-preview);
-                font-family: $font-project-preview;
-                background-color: rgba(0, 0, 0, 0.3);
-                text-transform: uppercase;
-                border: none;
-                box-shadow: none;
-                padding: 0.5em 1.2em;
-
-                @media screen and (max-width: 740px) {
-                    padding: 0.75em 2.5em;
-                }
-            }
-        }
-
-        .laptop {
-            position: absolute;
-            top: 5em;
-            left: 0;
-
-            @media screen and (max-width: 740px) {
-                position: initial;
-                width: 100%;
-                top: initial;
-                right: initial;
-                text-align: center;
-                margin-top: 2em;
-            }
-
-            img {
-                width: 27em;
-                height: 19em;
-
-                @media screen and (max-width: 740px) {
-                    position: initial;
-                    width: 80vw;
-                    height: 55vw;
-                }
-            }
-        }
-    }
-}
 
 
 
