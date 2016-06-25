@@ -20,14 +20,14 @@
 //////////// Clear Fix //////////////
 
 /***********************************************************
-                      Header Section
+                      Landing Section
 ************************************************************/
 
 
-.header-section {
+.landing-section {
     display: block;
 
-    .header-content {
+    .landing-content {
         display: block;
         position: relative;
         height: 100%;
@@ -72,7 +72,7 @@
                         left: 0;
                         right: 0;
                         width: 100%;
-                        border: 2px solid $color-header-line;
+                        border: 2px solid $color-landing-line;
                         box-sizing: border-box;
                     }
                 }
@@ -111,7 +111,7 @@
                 margin: 0 0 4em 2.5em
             }
 
-            .header-github {
+            .landing-github {
                 display: inline-block;
                 position: relative;
                 top: 0;
@@ -123,13 +123,13 @@
                 }
 
                 button {
-                    @include background-content('header-github.svg', contain);
+                    @include background-content('landing-github.svg', contain);
                     @include bg-dimention-position(2em, 2em, relative, 12px, 0);
                     @extend %buttonless;
                 }
             }
 
-            .header-email {
+            .landing-email {
                 display: inline-block;
                 margin-right: 1em;
                 position: relative;
@@ -144,14 +144,14 @@
                 }
 
                 a {
-                    @include text(1em, $color-header-email, 400, 0.5px);
-                    font-family: $font-header-email;
+                    @include text(1em, $color-landing-email, 400, 0.5px);
+                    font-family: $font-landing-email;
                     text-decoration: none;
                 }
             }
         }
 
-        .header-preview {
+        .landing-preview {
             display: inline-block;
             position: absolute;
             bottom: 3em;
@@ -162,8 +162,8 @@
             }
 
             a {
-                @include text(0.9em, $color-header-preview, 600);
-                font-family: $font-header-preview;
+                @include text(0.9em, $color-landing-preview, 600);
+                font-family: $font-landing-preview;
                 text-decoration: none;
                 text-transform: uppercase;
                 position: relative;
@@ -324,14 +324,6 @@
         }
     }
 }
-
-/***********************************
-            Content Left
-***********************************/
-
-
-
-
 
 /***********************************************************
                       Footer Section

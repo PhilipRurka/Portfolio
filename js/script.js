@@ -18,7 +18,7 @@
 
 
 
-$('.header-preview a').click(function (event) {
+$('.landing-preview a').click(function (event) {
 	event.preventDefault();
 	$('body').animate({
 	    scrollTop: $('#scroll-destination').offset().top
