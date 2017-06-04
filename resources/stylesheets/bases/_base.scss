@@ -1,0 +1,59 @@
+/***********************************************************
+                      	Font Family
+************************************************************/
+
+$lato													: 'Lato', sans-serif;
+
+
+/***********************************
+       Font Family Function
+************************************/
+
+$font-my-name									: $lato;
+$font-my-description					: $lato;
+$font-landing-email						: $lato;
+$font-landing-preview					: $lato;
+
+$font-project-name						: $lato;
+$font-project-description			: $lato;
+$font-project-preview					: $lato;
+
+$font-footer-greeting					: $lato;
+$font-footer-email						: $lato;
+
+
+
+
+
+
+.global {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.first {
+    background-color: $color-content-section;
+}
+
+.second {
+    background-color: gold;
+}
+
+.third {
+    background-color: #ff5c5c;
+}
+
+a,
+button {
+	outline: none!important;
+	&:hover {
+		outline: none!important;
+	}
+}
